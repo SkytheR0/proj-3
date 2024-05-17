@@ -4,283 +4,366 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="Hero">
+    <header class="header" id="header">
       <div class="container">
-        <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-list-item">
-              <a class="navigation-list-item-link" href="">Про наc</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-item-link" href="">Напрямки роботи</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-item-link" href="">Навчання</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-item-link" href="">Наші подорожі</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-item-link" href="">Наша команда</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-item-link" href="">Відгуки</a>
-            </li>
-          </ul>
-          <img src="./img/Vector 9.svg" alt="Phone" />
-          <img src="./img/локація.svg" alt="Location" />
-          <img src="./img/пошта.svg" alt="Mail" />
-        </nav>
-        <h1 class="Hero-text">Giraffe Club</h1>
-        <h2 class="Hero-text">
-          Офіційний сертифікований центр підготовки до міжнародних екзаменів
-          Cambrige
-        </h2>
+        <div class="header-wrapper">
+          <nav class="header-menu">
+            <ul class="header-menu__list">
+              <li class="header-list__item">
+                <a href="#">Про нас</a>
+              </li>
+              <li class="header-list__item">
+                <a href="#">Напрямки роботи</a>
+              </li>
+              <li class="header-list__item">
+                <a href="#">Навчання</a>
+              </li>
+              <li class="header-list__item">
+                <a href="#">Наші подорожі</a>
+              </li>
+              <li class="header-list__item">
+                <a href="#">Наша команда</a>
+              </li>
+              <li class="header-list__item">
+                <a href="#">Відгуки</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-contacts">
+            <a href="tel:123455667">
+              <svg
+                width="40.000000"
+                height="40.000000"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs />
+                <path
+                  id="Vector 9"
+                  d="M16.83 10.1C16.14 9.37 13.08 6.29 11.47 4.66C11.34 4.54 11.2 4.41 11.04 4.33C10.45 4 9.42 3.72 8.7 4.47C7.87 5.33 5.57 7.16 4.82 8.4C3.79 10.1 3.92 10.52 4.18 12.7C4.5 15.42 5.6 17.7 7.15 20.61C8.7 23.52 13.47 28.65 18.25 32.07C23.03 35.49 26.77 36 27.8 36C28.84 36 30.45 35.81 32.45 34.1C33.82 32.92 34.85 31.92 35.35 31.4C35.48 31.26 35.64 31.13 35.76 30.97C36.09 30.53 36.24 29.65 35.03 28.46C33.68 27.14 31.33 24.61 30.11 23.29C29.95 23.11 29.77 22.94 29.55 22.84C28.99 22.58 28.07 22.4 27.35 23.02C26.86 23.44 26.11 24.19 25.43 24.91C24.59 25.79 23.31 26.12 22.24 25.54C19.85 24.24 16.51 21.72 14.08 17.79C13.39 16.68 13.67 15.26 14.62 14.36L16.38 12.7C16.83 12.15 17.55 10.86 16.83 10.1Z"
+                  stroke="#000000"
+                  stroke-opacity="1.000000"
+                  stroke-width="2.000000"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg
+                width="40.000000"
+                height="40.000000"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs />
+                <path
+                  id="Ellipse 2"
+                  d="M31.87 12.22C31.87 17.55 26.48 27.35 22.07 35.27C21.24 36.75 19 36.62 18.25 35.1C14.44 27.37 8.12 17.48 8.12 12.22C8.12 6.02 13.44 1 20 1C26.55 1 31.87 6.02 31.87 12.22ZM29.87 12.22Q29.87 17.17 20.32 34.29Q20.31 34.31 20.22 34.31Q20.1 34.31 20.06 34.24Q20.05 34.23 20.04 34.22Q19.03 32.18 16.68 27.81Q10.12 15.61 10.12 12.22Q10.12 10.54 10.68 9.07Q11.39 7.24 12.97 5.74Q14.25 4.53 15.76 3.85Q17.69 3 20 3Q22.3 3 24.23 3.85Q25.74 4.53 27.02 5.74Q28.6 7.24 29.31 9.07Q29.87 10.54 29.87 12.22Z"
+                  fill="#000000"
+                  fill-opacity="1.000000"
+                  fill-rule="evenodd"
+                />
+                <circle
+                  id="Ellipse 3"
+                  cx="20.000000"
+                  cy="13.000000"
+                  r="4.000000"
+                  stroke="#000000"
+                  stroke-opacity="1.000000"
+                  stroke-width="2.000000"
+                />
+              </svg>
+            </a>
+            <a href="mailto:testmail@gmail.com">
+              <svg
+                width="44.000000"
+                height="40.000000"
+                viewBox="0 0 44 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <clipPath id="clip16_461">
+                    <rect
+                      id="пошта"
+                      width="64.000000"
+                      height="39.000000"
+                      transform="translate(-15.000000 1.000000)"
+                      fill="white"
+                      fill-opacity="0"
+                    />
+                  </clipPath>
+                  <clipPath id="clip16_460">
+                    <rect
+                      id="пошта"
+                      width="44.000000"
+                      height="40.000000"
+                      fill="white"
+                      fill-opacity="0"
+                    />
+                  </clipPath>
+                </defs>
+                <g clip-path="url(#clip16_460)">
+                  <g clip-path="url(#clip16_461)">
+                    <rect
+                      id="Rectangle 1"
+                      x="2.543213"
+                      y="6.176270"
+                      rx="4.000000"
+                      width="38.000000"
+                      height="30.000000"
+                      stroke="#000000"
+                      stroke-opacity="1.000000"
+                      stroke-width="2.000000"
+                    />
+                    <path
+                      id="Polygon 1"
+                      d="M39.86 12.62C43.23 10.47 41.71 5.25 37.71 5.25L6.28 5.25C2.28 5.25 0.76 10.47 4.13 12.62L19.85 22.63C21.16 23.46 22.83 23.46 24.14 22.63L39.86 12.62ZM38.79 10.93C40.47 9.86 39.71 7.25 37.71 7.25L6.28 7.25C4.28 7.25 3.52 9.86 5.2 10.93L20.92 20.94C21.58 21.36 22.41 21.36 23.07 20.94L38.79 10.93Z"
+                      fill="#000000"
+                      fill-opacity="1.000000"
+                      fill-rule="evenodd"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-    </section>
-    <section class="about">
+    </header>
+
+    <main class="main" id="main">
       <div class="container">
-        <h2 class="about-title">Мовних шкіл багато - лідер один!</h2>
-        <ul class="about-list">
-          <li class="about-list-item">
-            <img
-              class="about-list-item-image"
-              src="./img/calendar.svg"
-              alt="calendar"
-            />
-            <p class="about-list-item-text">6 років успішної роботи</p>
-          </li>
-          <li class="about-list-item">
-            <img
-              class="about-list-item-image"
-              src="./img/book.svg"
-              alt="book"
-            />
-            <p class="about-list-item-text">
-              Сучасні програми й навчальні матеріали
+        <div class="main-wrapper">
+          <div class="main-left">
+            <h1 class="main-title">Giraffe Club</h1>
+            <p class="main-subtitle">
+              Офіційний сертифікований центр підготовки до міжнародних екзаменів
+              Cambrige
             </p>
-          </li>
-          <li class="about-list-item">
-            <img
-              class="about-list-item-image"
-              src="./img/female.svg"
-              alt="female"
-            />
-            <p class="about-list-item-text">Професійні викладачи</p>
-          </li>
-          <li class="about-list-item">
-            <img
-              class="about-list-item-image"
-              src="./img/success.svg"
-              alt="success"
-            />
-            <p class="about-list-item-text">
-              Переможець «Народний Бренд» (2018, 2019, 2020)
-            </p>
-          </li>
-          <li class="about-list-item">
-            <img
-              class="about-list-item-image"
-              src="./img/handshake.svg"
-              alt="handshake"
-            />
-            <p class="about-list-item-text">
-              Топ партнер Cambridge Assessment English
-            </p>
-          </li>
-          <li class="about-list-item">
-            <img
-              class="about-list-item-image"
-              src="./img/student.svg"
-              alt="student"
-            />
-            <p class="about-list-item-text">
-              Сотні наших випускників з високим рівнем
-            </p>
-          </li>
-        </ul>
+            <a href="#" class="main-button">Отримати консультацію</a>
+          </div>
+        </div>
       </div>
-    </section>
-    <section class="areas">
-      <div class="container">
-        <h2 class="areas-title">Що ти можеш у нас знайти?</h2>
-        <ul class="areas-list">
-          <li class="areas-list-item">
-            <div class="areas-list-item-number">01</div>
-            <p class="areas-list-item-text">Англійська для дітей від 1 року</p>
-          </li>
-          <li class="areas-list-item">
-            <div class="areas-list-item-number">02</div>
-            <p class="areas-list-item-text">Англійська для дорослих</p>
-          </li>
-          <li class="areas-list-item">
-            <div class="areas-list-item-number">03</div>
-            <p class="areas-list-item-text">
-              Americanschool для школярів (1- 11 клас)
-            </p>
-          </li>
-          <li class="areas-list-item">
-            <div class="areas-list-item-number">04</div>
-            <p class="areas-list-item-text">Підготовка до ЗНО</p>
-          </li>
-          <li class="areas-list-item">
-            <div class="areas-list-item-number">05</div>
-            <p class="areas-list-item-text">
-              Підготовка до міжнародних екзаменів YLE, KET, PET, FCE, IELTS
-            </p>
-          </li>
-          <li class="areas-list-item">
-            <div class="areas-list-item-number">06</div>
-            <p class="areas-list-item-text">
-              Німецька для дорослих та дітей, віком від 3 років
-            </p>
-          </li>
-          <li class="areas-list-item">
-            <div class="areas-list-item-number">07</div>
-            <p class="areas-list-item-text">Підготовка дітей до школи</p>
-          </li>
-          <li class="areas-list-item">
-            <div class="areas-list-item-number">08</div>
-            <p class="areas-list-item-text">Літній табір</p>
-          </li>
-        </ul>
-        <button type="button" class="areas-button">Залишити заявку</button>
-      </div>
-    </section>
-    <section class="training">
-      <div class="container">
-        <h2 class="training-title">Вивчення іноземної мови</h2>
-        <ul class="training-list">
-          <li class="training-list-item">
-            <div class="training-list-item-number">01</div>
-            <p class="training-list-item-text">У групах</p>
-          </li>
-          <li class="training-list-item">
-            <div class="training-list-item-number">02</div>
-            <p class="training-list-item-text">У міні-групах</p>
-          </li>
-          <li class="training-list-item">
-            <div class="training-list-item-number">03</div>
-            <p class="training-list-item-text">Індивідуально</p>
-          </li>
-        </ul>
-        <img src="./img/фото.webp" alt="kids" />
-        <h2 class="training-title">Формати курсів:</h2>
-        <ul class="training-list">
-          <li class="training-list-item">
-            <div class="training-list-item-number">01</div>
-            <h3 class="training-list-item-h">Стандартний</h3>
-            <p class="training-list-item-text">
-              Заняття 2 рази на тиждень тривалістю від 30 до 60 хв. (в
-              залежності від віку).
-            </p>
-          </li>
-          <li class="training-list-item">
-            <div class="training-list-item-number">02</div>
-            <h3 class="training-list-item-h">Поглиблений</h3>
-            <p class="training-list-item-text">
-              Заняття 3 рази на тиждень по 1 год. 20 хв. З Кембриджським іспитом
-              на новий рівень в кінці навчального року.
-            </p>
-          </li>
-          <li class="training-list-item">
-            <div class="training-list-item-number">03</div>
-            <h3 class="training-list-item-h">Онлайн-курси</h3>
-            <p class="training-list-item-text">
-              Можна обрати як стандартний, так і поглиблений формат та вивчати
-              онлайн
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="travels">
-      <div class="container">
-        <h2 class="travels-title">Ми подорожуємо світом</h2>
-        <p class="travels-text">
-          Лондон, Греція, Болгарія, Польша, різні міста України.
-        </p>
-        <p class="travels-text">
-          Гарною традицією «GiraffeClub» стали освітні подорожі студентів в
-          різні країни. Окрім вивчення англійської й покращення практичних
-          навичок мови у спеціалізованих мовних центрах світу, програми поїздок
-          передбачають щоденні розваги й екскурсії.
-        </p>
-        <img
-          class="travels-photo"
-          src="./img/travel_003.webp"
-          alt="Ми подорожуємо світом"
-        />
-        <img
-          class="travels-photo"
-          src="./img/travel_007.webp"
-          alt="Ми подорожуємо світом"
-        />
-        <img
-          class="travels-photo"
-          src="./img/travel_004.webp"
-          alt="Ми подорожуємо світом"
-        />
-        <img
-          class="travels-photo"
-          src="./img/travel_008.webp"
-          alt="Ми подорожуємо світом"
-        />
-        <img
-          class="travels-photo"
-          src="./img/travel_001.webp"
-          alt="Ми подорожуємо світом"
-        />
-        <img
-          class="travels-photo"
-          src="./img/travel_009.webp"
-          alt="Ми подорожуємо світом"
-        />
-        <img
-          class="travels-photo"
-          src="./img/travel_002.webp"
-          alt="Ми подорожуємо світом"
-        /><img
-          class="travels-photo"
-          src="./img/travel_006.webp"
-          alt="Ми подорожуємо світом"
-        />
-      </div>
-    </section>
+    </main>
+        <section class="about">
+          <div class="container">
+            <h2 class="about-title">Мовних шкіл багато - лідер один!</h2>
+            <ul class="about-list">
+              <div class="about-list-container">
+                <li class="about-list-item">
+                  <img
+                    class="about-list-item-image"
+                    src="./img/calendar.svg"
+                    alt="calendar"
+                  />
+                  <p class="about-list-item-text">6 років успішної роботи</p>
+                </li>
+                <li class="about-list-item">
+                  <img
+                    class="about-list-item-image"
+                    src="./img/book.svg"
+                    alt="book"
+                  />
+                  <p class="about-list-item-text">
+                    Сучасні програми й навчальні матеріали
+                  </p>
+                </li>
+                <li class="about-list-item">
+                  <img
+                    class="about-list-item-image"
+                    src="./img/female.svg"
+                    alt="female"
+                  />
+                  <p class="about-list-item-text">Професійні викладачи</p>
+                </li>
+              </div>
+              <div class="about-list-container">
+                <li class="about-list-item">
+                  <img
+                    class="about-list-item-image"
+                    src="./img/success.svg"
+                    alt="success"
+                  />
+                  <p class="about-list-item-text">
+                    Переможець «Народний Бренд» (2018, 2019, 2020)
+                  </p>
+                </li>
+                <li class="about-list-item">
+                  <img
+                    class="about-list-item-image"
+                    src="./img/handshake.svg"
+                    alt="handshake"
+                  />
+                  <p class="about-list-item-text">
+                    Топ партнер Cambridge Assessment English
+                  </p>
+                </li>
+                <li class="about-list-item">
+                  <img
+                    class="about-list-item-image"
+                    src="./img/student.svg"
+                    alt="student"
+                  />
+                  <p class="about-list-item-text">
+                    Сотні наших випускників з високим рівнем
+                  </p>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </section>
+        <section class="areas">
+          <div class="container">
+            <div class="areas-wrapper">
+              <h2 class="areas-title">Що ти можеш у нас знайти?</h2>
+              <ul class="areas-list">
+                <li class="areas-list__item">
+                  <div>01</div>
+                  <span>Англійська для дітей від 1 року</span>
+                </li>
+                <li class="areas-list__item">
+                  <div>02</div>
+                  <span>Англійська для дорослих</span>
+                </li>
+                <li class="areas-list__item">
+                  <div>03</div>
+                  <span>Americanschool для школярів (1- 11 клас)</span>
+                </li>
+                <li class="areas-list__item">
+                  <div>04</div>
+                  <span>Підготовка до ЗНО</span>
+                </li>
+                <li class="areas-list__item">
+                  <div>05</div>
+                  <span>Підготовка до міжнародних екзаменів YLE, KET, PET, FCE, IELTS</span>
+                </li>
+                <li class="areas-list__item">
+                  <div>06</div>
+                  <span>Німецька для дорослих та дітей, віком від 3 років</span>
+                </li>
+                <li class="areas-list__item">
+                  <div>07</div>
+                  <span>Підготовка дітей до школи</span>
+                </li>
+                <li class="areas-list__item">
+                  <div>08</div>
+                  <span>Літній табір</span>
+                </li>
+              </ul>
+              <button class="areas-button">Залишити заявку</button>
+            </div>
+          </div>
+        </section>
+        <section class="training">
+          <div class="container">
+            <h2 class="training-title">Вивчення іноземної мови</h2>
+            <ul class="training-list">
+              <div class="training-list-eng">
+                <li class="training-list-eng-item">
+                  <div class="training-list-item-number">01</div>
+                  <p class="training-list-eng-item-text">У групах</p>
+                </li>
+                <li class="training-list-eng-item">
+                  <div class="training-list-item-number">02</div>
+                  <p class="training-list-eng-item-text">У міні-групах</p>
+                </li>
+                <li class="training-list-eng-item">
+                  <div class="training-list-item-number">03</div>
+                  <p class="training-list-eng-item-text">Індивідуально</p>
+                </li>
+              </div>
+            </ul>
+            <img class="training-image" src="./img/фото.webp" alt="kids" />
+            <h2 class="training-title pos">Формати курсів:</h2>
+            <ul class="training-list">
+              <div class="training-list-formats">
+                <li class="training-list-formats-item">
+                  <div class="training-list-formats-item-container">
+                    <div class="training-list-item-number">01</div>
+                    <h3 class="training-list-formats-item-title">Стандартний</h3>
+                  </div>
+                  <p class="training-list-formats-item-text">
+                    Заняття 2 рази на тиждень тривалістю від 30 до 60 хв. (в
+                    залежності від віку).
+                  </p>
+                </li>
+                <li class="training-list-formats-item">
+                  <div class="training-list-formats-item-container">
+                    <div class="training-list-item-number">02</div>
+                    <h3 class="training-list-formats-item-title">Поглиблений</h3>
+                  </div>
+                  <p class="training-list-formats-item-text">
+                    Заняття 3 рази на тиждень по 1 год. 20 хв. З Кембриджським
+                    іспитом на новий рівень в кінці навчального року.
+                  </p>
+                </li>
+                <li class="training-list-formats-item">
+                  <div class="training-list-formats-item-container">
+                    <div class="training-list-item-number">03</div>
+                    <h3 class="training-list-formats-item-title">Онлайн-курси</h3>
+                  </div>
+                  <p class="training-list-formats-item-text">
+                    Можна обрати як стандартний, так і поглиблений формат та вивчати
+                    онлайн
+                  </p>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </section>
+        <section class="travels">
+          <div class="container">
+              <h2 class="travels-title">Ми подорожуємо світом</h2>
+              <p class="travels-text">Лондон, Греція, Болгарія, Польша, різні міста України.</p>
+              <p class="travels-text">Гарною традицією «GiraffeClub» стали освітні подорожі студентів в різні країни.
+                  Окрім вивчення англійської й покращення практичних навичок мови у спеціалізованих мовних центрах світу,
+                  програми поїздок передбачають щоденні розваги й екскурсії.</p>
+              <div class="travels-photo">
+                  <img class="travels-photo-1" src="./img/travel_003.webp" alt="Ми подорожуємо світом">
+                  <img class="travels-photo-2" src="./img/travel_007.webp" alt="Ми подорожуємо світом">
+                  <img class="travels-photo-3" src="./img/travel_004.webp" alt="Ми подорожуємо світом">
+                  <img class="travels-photo-4" src="./img/travel_008.webp" alt="Ми подорожуємо світом">
+                  <img class="travels-photo-5 travels-grid" src="./img/travel_009.webp" alt="Ми подорожуємо світом">
+                  <img class="travels-photo-6 travels-grid" src="./img/travel_001.webp" alt="Ми подорожуємо світом">
+                  <img class="travels-photo-7 travels-grid" src="./img/travel_002.webp" alt="Ми подорожуємо світом">
+                  <img class="travels-photo-8 travels-grid" src="./img/travel_006.webp" alt="Ми подорожуємо світом">
+              </div>
+          </div>
+      </section>
     <section class="team">
       <div class="container">
         <h2 class="team-title">Найкраща команда - найкращі результати</h2>
-        <ul>
+        <ul class="team-list">
+          <button class="team-list-button left" type="button"></button>
           <li class="team-list-item">
             <img
               class="team-list-item-image"
               src="./img/team_018.webp"
               alt="Валерія Звіранська"
             />
-            <p class="team-list-item-text">Валерія Звіранська</p>
-            <p class="team-list-item-text">Адміністратор</p>
-            <p class="team-list-item-text">
+            <p class="team-list-item-text-name">Валерія Звіранська</p>
+            <p class="team-list-item-text-profession">Адміністратор</p>
+            <p class="team-list-item-text-education">
               Має вищу педагогічну освіту. Її профіль: германські мови.
               Перекладач.
             </p>
-            <p class="team-list-item-text">Викладацький стаж: 22 роки</p>
-          </li>
-          <li class="team-list-item">
-            <img
-              class="team-list-item-image"
-              src="./img/team_002.webp"
-              alt="Наталія Шмалько"
-            />
-            <p class="team-list-item-text">Наталія Шмалько</p>
-            <p class="team-list-item-text">Адміністратор</p>
-            <p class="team-list-item-text">
-              Має вищу педагогічну освіту. Її профіль: германські мови.
-              Перекладач.
+            <p class="team-list-item-text-experience">
+              Викладацький стаж: 22 роки
             </p>
-            <p class="team-list-item-text">Викладацький стаж: 22 роки</p>
           </li>
           <li class="team-list-item">
             <img
@@ -288,62 +371,106 @@
               src="./img/team_001.webp"
               alt="Ольга Мануйлова"
             />
-            <p class="team-list-item-text">Ольга Мануйлова</p>
-            <p class="team-list-item-text">Засновниця школи.</p>
-            <p class="team-list-item-text">
+            <p class="team-list-item-text-name">Ольга Мануйлова</p>
+            <p class="team-list-item-text-profession">Засновниця школи.</p>
+            <p class="team-list-item-text-education">
               Має вищу педагогічну освіту. Її профіль: германські мови.
               Перекладач.
             </p>
-            <p class="team-list-item-text">Викладацький стаж: 22 роки</p>
+            <p class="team-list-item-text-experience">
+              Викладацький стаж: 22 роки
+            </p>
           </li>
+          <li class="team-list-item">
+            <img
+              class="team-list-item-image"
+              src="./img/team_002..webp"
+              alt="Наталія Шмалько"
+            />
+            <p class="team-list-item-text-name">Наталія Шмалько</p>
+            <p class="team-list-item-text-profession">Адміністратор</p>
+            <p class="team-list-item-text-education">
+              Має вищу педагогічну освіту. Її профіль: германські мови.
+              Перекладач.
+            </p>
+            <p class="team-list-item-text-experience">
+              Викладацький стаж: 22 роки
+            </p>
+          </li>
+          <button class="team-list-button right" type="button"></button>
         </ul>
       </div>
     </section>
-    <section class="Reviews">
+    <section class="reviews">
       <div class="container">
-        <h2 class="Reviews-title">Що кажуть про нас</h2>
-        <ul class="Reviews-list">
-          <li class="Reviews-list-item">
-            <p class="Reviews-list-item-name">Ольга Березовська</p>
-            <p class="Reviews-list-item-about">
-              приватний нотаріус м.Кропивницький
-            </p>
-            <p class="Reviews-list-item-comment">
-              Високий рівень викладання – викладачі прекрасні, професіонали
-              своєї справи. Звернулися до Ольги до Жирафа Клаба за
-              рекомендацією. Хочу особливо відзначити організованість,
-              дисципліну, чіткість, гарний та зручний дизайн офісу. Враження
-              лише позитивні, чудові, результат навчання – міжнародний
-              сертифікат у дочки. Рекомендую.
-            </p>
-          </li>
-          <li class="Reviews-list-item">
-            <p class="Reviews-list-item-name">Олена Кравчук</p>
-            <p class="Reviews-list-item-about">батько учня 5-А класу</p>
-            <p class="Reviews-list-item-comment">
-              Прекрасне місце для навчання дітей! Велика подяка вчителям за їхню
-              терплячість та професіоналізм. Мій син вже другий рік навчається
-              тут і має тільки позитивні враження. Завдяки інноваційним
-              методикам навчання та індивідуальному підходу кожному учневі, він
-              розвивається не лише академічно, а й в сфері соціальних навичок.
-              Раджу цю школу всім батькам, хто шукає якісну освіту для своєї
-              дитини.
-            </p>
-          </li>
-          <li class="Reviews-list-item">
-            <p class="Reviews-list-item-name">Максим Іваненко</p>
-            <p class="Reviews-list-item-about">батько учениці 7-Б класу</p>
-            <p class="Reviews-list-item-comment">
-              Моя дочка навчається в школі вже протягом трьох років і я вражений
-              якістю освіти, яку вона отримує тут. Вчителі школи не лише
-              компетентні, але й дуже підтримують кожного учня в їхньому
-              навчанні та особистісному розвитку. Школа активно впроваджує
-              новітні технології в навчальний процес, що допомагає дітям
-              зрозуміти матеріал краще та зацікавленіше. Я дуже задоволений
-              знаннями, які моя дитина отримує тут.
-            </p>
-          </li>
-        </ul>
+        <div class="reviews-wrapper">
+          <h2 class="reviews-title title">Що кажуть про нас</h2>
+          <div class="reviews-list">
+            <button class="reviews-list__arrow left"></button>
+            <div class="reviews-list__item">
+              <header class="reviews-item__header">
+                <div class="reviews-item__about">
+                  <p class="reviews-item__name">Ольга Березовська</p>
+                  <p class="reviews-item__role">
+                    приватний нотаріус м.Кропивницький
+                  </p>
+                </div>
+                <div class="reviews-item__img">
+                  <img src="./img/giraffe.webp" alt="giraffe" />
+                </div>
+              </header>
+              <p class="reviews-item__about">
+                Високий рівень викладання – викладачі прекрасні, професіонали
+                своєї справи. Звернулися до Ольги до Жирафа Клаба за
+                рекомендацією. Хочу особливо відзначити організованість,
+                дисципліну, чіткість, гарний та зручний дизайн офісу. Враження
+                лише позитивні, чудові, результат навчання – міжнародний
+                сертифікат у дочки. Рекомендую.
+              </p>
+            </div>
+            <div class="reviews-list__item hidden">
+              <header class="reviews-item__header">
+                <div class="reviews-item__about">
+                  <p class="reviews-item__name">Олена Кравчук</p>
+                  <p class="reviews-item__role">батько учня 5-А класу</p>
+                </div>
+                <div class="reviews-item__img">
+                  <img src="./img/giraffe.webp" alt="giraffe" />
+                </div>
+              </header>
+              <p class="reviews-item__about">
+                Прекрасне місце для навчання дітей! Велика подяка вчителям за
+                їхню терплячість та професіоналізм. Мій син вже другий рік
+                навчається тут і має тільки позитивні враження. Завдяки
+                інноваційним методикам навчання та індивідуальному підходу
+                кожному учневі, він розвивається не лише академічно, а й в сфері
+                соціальних навичок. Раджу цю школу всім батькам, хто шукає
+                якісну освіту для своєї дитини.
+              </p>
+            </div>
+            <div class="reviews-list__item hidden">
+              <header class="reviews-item__header">
+                <div class="reviews-item__about">
+                  <p class="reviews-item__name">Максим Іваненко</p>
+                  <p class="reviews-item__role">батько учениці 7-Б класу</p>
+                </div>
+                <div class="reviews-item__img">
+                  <img src="./img/giraffe.webp" alt="giraffe" />
+                </div>
+              </header>
+              <p class="reviews-item__about">
+                Моя дочка навчається в школі вже протягом трьох років і я
+                вражений якістю освіти, яку вона отримує тут. Вчителі школи не
+                лише компетентні, але й дуже підтримують кожного учня в їхньому
+                навчанні та особистісному розвитку. Школа активно впроваджує
+                новітні технології в навчальний процес, що допомагає дітям
+                зрозуміти матеріал краще та зацікавленіше. Я дуже задоволений
+                знаннями, які моя дитина отримує тут.
+              </p>
+            </div>
+            <button class="reviews-list__arrow right"></button>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="footer">
@@ -355,7 +482,11 @@
         </li>
         <li class="footer-list-item">
           <p class="footer-list-item-information">Email:</p>
-          <p class="footer-list-item-answers">info@giraffe.in.ua</p>
+          <a
+            class="footer-list-item-answers"
+            href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRnXmjZNRRRlrBnBfTPKdJnXsXzlVfCkWhChDHdvvbMHVhkJPQPzBZhrhMtDcktksPQwTqq"
+            >info@giraffe.in.ua</a
+          >
         </li>
         <li class="footer-list-item">
           <p class="footer-list-item-information">Адреса:</p>
@@ -364,6 +495,27 @@
           </p>
         </li>
       </ul>
+      <div class="footer-socials">
+        <p class="footer-socials-information">Соціальні мережі:</p>
+        <ul class="footer-socials-list">
+          <li class="footer-socials-list-item">
+            <a class="footer-socials-list-item-link" href="https://uk-ua.facebook.com/"
+              ><img
+                class="footer-socials-list-item-link-image"
+                src="./img/facebook.svg"
+                alt="facebook"
+            /></a>
+          </li>
+          <li class="footer-socials-list-item">
+            <a class="footer-socials-list-item-link" href="https://www.instagram.com/"
+              ><img
+                class="footer-socials-list-item-link-image"
+                src="./img/insta.svg"
+                alt="instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
     <script src="./index.js"></script>
   </body>
